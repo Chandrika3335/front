@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: chandrikafront 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chandrikafront
+  template:
+    metadata:
+      labels:
+        app: chandrikafront 
+    spec:
+      containers:
+        - name: chandrikafront 
+          image: teamacr2.azurecr.io/chandrikafront
+          ports:
+          - containerPort: 4200
