@@ -8,7 +8,7 @@ import { Application } from '../Model/application';
   providedIn: 'root'
 })
 export class JobseekerService {
-  base_url = "http://172.176.55.253:8082/";
+  base_url = "http://172.175.19.91:8082/";
   constructor(private http: HttpClient) {   }
 
   public getJobsByUserId(id:Number):Observable <any>{
